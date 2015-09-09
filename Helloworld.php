@@ -8,15 +8,39 @@
 <br>
 <?php
 	$age = 4;
-	$sex = "5-6 times a week"
-	
+		
 	//kell oli pool 3 kui mati kooli jõudis
 	
-	if(age <18) {
+	if($age < 18) {
 		//tõene
-		echo "alakas"
+		echo "alakas";
 	} else {
 		//väär
-		echo "täisealine"
-		}
+		echo "täisealine";
+	}
+?>
+
+<?php
+
+	//vastavalt vanusele trükime niimitu korda välja sõna "palju", kui on vanust
+	for($i = 0; $i < $age; $i = $i + 1) {
+		
+		//tegevus mis kordub
+		echo "palju";
+		
+	}
+	
+	echo "õnne!"
+
+?>
+<br>
+<?php
+
+
+	//trüki välja kuupäev kujul: nädalapäev, kp, kuu, aasta
+	echo date("l, jS \of F Y e");
+
+
+
+
 ?>
